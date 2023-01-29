@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Bootstrap Webpage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- header section -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Carousel</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <!-- dropdown button code -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- dropdown button code -->
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <article id="pageContainer" class="container-fluid bg-body-tertiary">
+      <!-- banner section with sliding image  -->
+      <section id="banner" class="container-fluid">
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="./images/2.jpg"
+                style="height: 500px"
+                class="d-block w-100"
+                alt="img1"
+              />
+              <div class="carousel-caption d-none d-md-block text-light">
+                <h5>Another example headline</h5>
+                <p class="fs-6 fw-light">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum eligendi quis distinctio minima dolore, suscipit quae
+                  illum, reprehenderit vero expedita
+                </p>
+                <button type="button" class="btn btn-primary mb-3">
+                  Learn more
+                </button>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="./images/1.jpg"
+                style="height: 500px"
+                class="d-block w-100"
+                alt="img1"
+              />
+              <div class="carousel-caption d-none d-md-block text-light">
+                <h5>Another example headline</h5>
+                <p class="fs-6 fw-light">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum eligendi quis distinctio minima dolore, suscipit quae
+                  illum, reprehenderit vero expedita
+                </p>
+                <button type="button" class="btn btn-primary mb-3">
+                  Learn more
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./images/3.jpg"
+                style="height: 500px"
+                class="d-block w-100"
+                alt="img1"
+              />
+              <div class="carousel-caption d-none d-md-block text-light">
+                <h5>Another example headline</h5>
+                <p class="fs-6 fw-light">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum eligendi quis distinctio minima dolore, suscipit quae
+                  illum, reprehenderit vero expedita
+                </p>
+                <button type="button" class="btn btn-primary mb-3">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- end of banner section with sliding images -->
+
+      <!-- main content section -->
+      <main class="container" style="width: 70%">
+        <div class="container-fluid mt-5">
+          <div class="row">
+            <div
+              class="col col-12 col-md-4 d-flex flex-column align-items-center mb-5"
+            >
+              <img
+                src="./images/4.jpg"
+                style="width: 80px; height: 80px"
+                class="rounded-circle"
+                alt="..."
+              />
+              <h3 class="mt-3">Heading</h3>
+              <p style="text-align: center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
+                ipsum dolor sit amet consectetur adipisicing elit
+              </p>
+              <button type="button" class="btn btn-primary">
+                View Details
+              </button>
+            </div>
+
+            <div
+              class="col col-12 col-md-4 d-flex flex-column align-items-center mb-5"
+            >
+              <img
+                src="./images/4.jpg"
+                style="width: 80px; height: 80px"
+                class="rounded-circle"
+                alt="..."
+              />
+              <h3 class="mt-3">Heading</h3>
+              <p style="text-align: center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
+                ipsum dolor sit amet consectetur adipisicing elit
+              </p>
+              <button type="button" class="btn btn-primary">
+                View Details
+              </button>
+            </div>
+
+            <div
+              class="col col-12 col-md-4 d-flex flex-column align-items-center mb-5"
+            >
+              <img
+                src="./images/4.jpg"
+                style="width: 80px; height: 80px"
+                class="rounded-circle"
+                alt="..."
+              />
+              <h3 class="mt-3">Heading</h3>
+              <p style="text-align: center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
+                ipsum dolor sit amet consectetur adipisicing elit
+              </p>
+              <button type="button" class="btn btn-primary">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid mt-5">
+          <div class="card mb-5">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-8 col-12 col order-last order-md-first pt-5">
+                  <h5 class="card-title">
+                    First feature heading. it'll below mind
+                  </h5>
+                  <p class="card-text fs-6">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Doloribus non natus error iusto corporis. Soluta, sit at
+                    veritatis
+                  </p>
+                </div>
+
+                <div class="col-12 col-md-4 col order-first order-md-last">
+                  <img
+                    src="./images/5.jpg"
+                    class="img-fluid rounded-start"
+                    alt="flower"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-5">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12 col-md-4 col order-first order-md-last">
+                  <img
+                    src="./images/6.jpg"
+                    class="img-fluid rounded-start"
+                    alt="flower"
+                  />
+                </div>
+
+                <div class="col-md-8 col-12 col order-last order-md-first pt-5">
+                  <h5 class="card-title">
+                    Oh yeah,it's that good.See for yourself.
+                  </h5>
+                  <p class="card-text fs-6">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Doloribus non natus error iusto corporis. Soluta, sit at
+                    veritatis
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-5">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-8 col-12 col order-last order-md-first pt-5">
+                  <h5 class="card-title">And lastly, this one. Checkmate</h5>
+                  <p class="card-text fs-6">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Doloribus non natus error iusto corporis. Soluta, sit at
+                    veritatis
+                  </p>
+                </div>
+
+                <div class="col-12 col-md-4 col order-first order-md-last">
+                  <img
+                    src="./images/7.jpg"
+                    class="img-fluid rounded-start"
+                    alt="flower"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- end of main content section -->
+
+      <!-- footer section -->
+      <footer class="row bg-body-secondary p-3">
+        <div class="col-sm-9 col-12">
+          <div class="row">
+            <div
+              class="col-12 col-sm-8 col-md-6 col-lg-5 d-flex d-sm-block justify-content-center"
+            >
+              <p>@ 2022-2023 Peculiar,design</p>
+            </div>
+            <div
+              class="col-sm-3 col-12 d-flex d-sm-block justify-content-center"
+            >
+              <a href="#" class="navbar-brand text-primary">Privacy Terms</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-12 d-flex d-sm-block justify-content-center">
+          <a href="#pageContainer" class="navbar-brand text-primary"
+            >Back to top</a
+          >
+        </div>
+      </footer>
+      <!-- end of footer section -->
+    </article>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
